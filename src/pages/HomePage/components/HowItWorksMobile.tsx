@@ -13,13 +13,13 @@ const HowItWorksMobile = () => {
     },
     {
       number: '2',
-      title: 'Design & Build',
+      title: 'Smart Growth Framework',
       description: 'Based on insights, we design a custom marketing system. This includes strategy, automation, and AI-driven optimizations to build a smooth, scalable growth engine.',
       icon: network,
     },
     {
       number: '3',
-      title: 'Launch & Optimize',
+      title: 'Execute, Optimize & Scale',
       description: 'We launch, track, and continuously improve performance. What works is scaled, what doesn\'t is fixed—driving consistent and measurable growth.',
       icon: cart,
     },

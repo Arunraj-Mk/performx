@@ -8,7 +8,7 @@ const HowItWorks = () => {
   const steps = [
     {
       number: '1',
-      description: 'We start by understanding your current marketing performance. We audit what\'s working, what\'s not, and study your market, competitors, and audience to find real growth opportunities.',
+      description: "We start by understanding your current marketing performance. We audit what’s working, what’s not, and study your market, competitors, and audience to find real growth opportunities.",
       icon: bag,
       // Change these values to position icon 1
       top: '46%',
@@ -16,7 +16,7 @@ const HowItWorks = () => {
     },
     {
       number: '2',
-      description: 'Based on insights, we design a custom marketing system. This includes strategy, automation, and AI-driven optimizations to build a smooth, scalable growth engine.',
+      description: "Based on insights, we design a custom marketing system. This includes strategy, automation, and AI-driven optimizations to build a smooth, scalable growth engine.",
       icon: network,
       // Change these values to position icon 2
       top: '49%',
@@ -24,7 +24,7 @@ const HowItWorks = () => {
     },
     {
       number: '3',
-      description: 'We launch, track, and continuously improve performance. What works is scaled, what doesn\'t is fixed—driving consistent and measurable growth.',
+      description: "We launch, track, and continuously improve performance. What works is scaled, what doesn’t is fixed—driving consistent and measurable growth.",
       icon: cart,
       // Change these values to position icon 3
       top: '46%',
@@ -118,7 +118,7 @@ const HowItWorks = () => {
 
              
               <div className='flex items-baseline justify-end gap-2 '>
-              <h3 className='font-semibold'>Audit & Market Clarity</h3>
+              <h3 className='font-semibold'>Smart Growth Framework</h3>
 
 <div className="text-7xl lg:text-8xl font-bold text-gray-200 mb-3 leading-none">
 {steps[1].number}
@@ -144,7 +144,7 @@ const HowItWorks = () => {
 
 
 <div className='flex items-baseline justify-end gap-2 '>
-<h3 className='font-semibold'>Audit & Market Clarity</h3>
+<h3 className='font-semibold'>Execute, Optimize & Scale</h3>
 
 <div className="text-7xl lg:text-8xl font-bold text-gray-200 mb-3 leading-none">
               {steps[2].number}
