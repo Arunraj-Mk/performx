@@ -9,7 +9,7 @@ const CCC = () => {
           <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             Calm Clear Continuous
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Everything begins with understanding. <span className="font-bold">We listen to your data, your market,</span> and your goals to build growth systems that last.
           </p>
         </div>

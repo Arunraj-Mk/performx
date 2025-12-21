@@ -41,11 +41,11 @@ const ProjectBy = () => {
 
             {/* Text Content */}
             <div className="flex flex-col gap-6">
-              <p className="text-xl lg:text-2xl text-[#3C3C3C] leading-relaxed">
+              <p className="text-base sm:text-lg lg:text-2xl text-[#3C3C3C] leading-relaxed">
                 Real growth is not won by shouting louder or spending bigger. It is earned through clarity, connection, and consistency
               </p>
               
-              <p className="text-xl lg:text-2xl text-[#3C3C3C] leading-relaxed">
+              <p className="text-base sm:text-lg lg:text-2xl text-[#3C3C3C] leading-relaxed">
                 At <span className='font-semibold'>Perform 100X</span>, we are strategists, analysts, and creative technologists who believe growth should be quietly powerful. We use data science, design thinking, and intelligent systems to help modern brands grow with intention, not with noise.
               </p>
             </div>

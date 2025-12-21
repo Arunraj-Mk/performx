@@ -62,12 +62,12 @@ const WhyPerform100x = () => {
             className="bg-white rounded-2xl p-8 relative"
             style={{
               border: '1px solid #B7B7B7',
-              background:"#F5FBFF",
+              background:"#ffffff",
               borderRadius: '20px',
             }}
           >
             {/* Limited Spot Badge */}
-            <div className="absolute top-6 right-6">
+            <div className="absolute top-3 right-6">
               <span 
                 style={{
                   color: '#1DA84B',
