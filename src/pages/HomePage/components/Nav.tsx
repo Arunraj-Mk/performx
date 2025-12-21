@@ -99,7 +99,7 @@ const Nav = () => {
           {/* Right Section - CTA Button with Position-Aware Blob */}
           <div className="hidden md:block">
             <Link
-              to="/dashboard"
+              to="/"
               className="blob-btn relative px-5 py-2.5 text-[13px] font-medium flex items-center gap-1.5 z-10 cursor-pointer overflow-hidden"
               style={{
                 color: '#ffffff',
@@ -187,7 +187,7 @@ const Nav = () => {
             How it works
           </button>
           <Link
-            to="/dashboard"
+            to="/"
             className="blob-btn relative px-5 py-2.5 text-[13px] font-medium flex items-center gap-1.5 z-10 cursor-pointer overflow-hidden mt-2"
             style={{
               color: '#ffffff',

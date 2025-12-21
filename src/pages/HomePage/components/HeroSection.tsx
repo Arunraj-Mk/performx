@@ -77,8 +77,8 @@ export default function HeroSection() {
           </span>
         </div>
 
-        {/* Main Heading with Animation */}
-        <div className="mb-4">
+        {/* Main Heading with Animation - Desktop */}
+        <div className="mb-4 hidden sm:block">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight flex items-center justify-center flex-wrap gap-2">
             <div 
               className="inline-block overflow-hidden relative"
@@ -111,6 +111,48 @@ export default function HeroSection() {
             <img src={star} alt="Growth" style={{ width: '100px', height: '100px' }} />
             <span className="text-gray-900">Growth</span>
           </h1>
+        </div>
+
+        {/* Main Heading with Animation - Mobile */}
+        <div className="mb-4 block sm:hidden">
+          {/* Animated headline on top */}
+          <div className="flex justify-center mb-4">
+            <div 
+              className="inline-block overflow-hidden relative "
+              style={{
+                height: '2.4em',
+                width: '100%',
+                maxWidth: '100%',
+                lineHeight: '1.5em'
+              }}
+            >
+              <div className="relative w-full h-full flex justify-center  h-[100px]">
+                {headlines.map((headline, index) => {
+                  const position = index - currentIndex;
+                  
+                  return (
+                    <span
+                      key={`${headline}-mobile-${index}`}
+                      className="absolute  left-[280px] -translate-x-1/2 inline-block font-semibold whitespace-nowrap text-[#2A73FE] transition-transform duration-1000 text-2xl"
+                      style={{
+                        transform: `translateX(-50%) translateY(${position * 100}%)`,
+                        transitionTimingFunction: 'cubic-bezier(0.76, 0, 0.24, 1)',
+                        lineHeight: '1.5em'
+                      }}
+                    >
+                      {headline}
+                    </span>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+          
+          {/* Image and Growth text below */}
+          <div className="flex items-center justify-center gap-2">
+            <img src={star} alt="Growth" style={{ width: '80px', height: '80px' }} />
+            <span className="text-gray-900 text-4xl font-bold">Growth</span>
+          </div>
         </div>
 
         <h2 
