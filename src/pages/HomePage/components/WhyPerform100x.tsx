@@ -67,7 +67,7 @@ const WhyPerform100x = () => {
             }}
           >
             {/* Limited Spot Badge */}
-            <div className="absolute top-3 right-6">
+            <div className="absolute top-2 right-6">
               <span 
                 style={{
                   color: '#1DA84B',
