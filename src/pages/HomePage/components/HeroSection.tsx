@@ -120,7 +120,7 @@ export default function HeroSection() {
             <div 
               className="inline-block overflow-hidden relative "
               style={{
-                height: '2.4em',
+                height: '2.6em',
                 width: '100%',
                 maxWidth: '100%',
                 lineHeight: '1.5em'
@@ -133,7 +133,7 @@ export default function HeroSection() {
                   return (
                     <span
                       key={`${headline}-mobile-${index}`}
-                      className="absolute  left-[280px] -translate-x-1/2 inline-block font-semibold whitespace-nowrap text-[#2A73FE] transition-transform duration-1000 text-2xl"
+                      className="absolute  left-[290px] -translate-x-1/2 inline-block font-semibold whitespace-nowrap text-[#2A73FE] transition-transform duration-1000 text-3xl"
                       style={{
                         transform: `translateX(-50%) translateY(${position * 100}%)`,
                         transitionTimingFunction: 'cubic-bezier(0.76, 0, 0.24, 1)',
@@ -151,12 +151,13 @@ export default function HeroSection() {
           {/* Image and Growth text below */}
           <div className="flex items-center justify-center gap-2">
             <img src={star} alt="Growth" style={{ width: '80px', height: '80px' }} />
-            <span className="text-gray-900 text-4xl font-bold">Growth</span>
+            <span className="text-gray-900 text-3xl sm:text-4xl lg:text-5xl font-bold">
+            Growth</span>
           </div>
         </div>
 
         <h2 
-          className="text-4xl sm:text-5xl lg:text-6xl font-serif italic text-gray-800 mb-8"
+          className="text-2xl sm:text-4xl lg:text-6xl font-serif italic text-gray-800 mb-8"
           style={{ fontFamily: 'Playfair Display, serif' }}
         >
           Systems for the Modern Brand
