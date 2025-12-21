@@ -6,10 +6,10 @@ const CCC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-6">
             Calm Clear Continuous
           </h2>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-sm sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Everything begins with understanding. <span className="font-bold">We listen to your data, your market,</span> and your goals to build growth systems that last.
           </p>
         </div>
