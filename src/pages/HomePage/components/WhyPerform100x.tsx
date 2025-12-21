@@ -183,6 +183,13 @@ padding:"5px 14px"
               {/* Submit Button */}
               <button
                 type="submit"
+                onClick={() => {
+                  window.open(
+                    'https://calendly.com/ceo-perform100x/30min',
+                    '_blank',
+                    'noopener,noreferrer'
+                  )
+                }}
                 className="w-full text-white font-semibold transition-colors duration-300 hover:opacity-90 whitespace-nowrap"
                 style={{
                   display: 'flex',

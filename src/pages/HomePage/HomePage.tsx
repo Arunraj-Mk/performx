@@ -33,8 +33,12 @@ const HomePage = () => {
       <Testimonials />
       <JustSystem />
       <CCC />
-      <WhyPerform100x />
-      <Footer />
+      <div id="why-us">
+        <WhyPerform100x />
+      </div>
+      <div id="contact">
+        <Footer />
+      </div>
     </div>
   )
 }
