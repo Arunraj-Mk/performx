@@ -73,6 +73,13 @@ const JustSystem = () => {
 
             {/* CTA Button */}
             <button 
+             onClick={() => {
+              window.open(
+                'https://calendly.com/ceo-perform100x/30min',
+                '_blank',
+                'noopener,noreferrer'
+              )
+            }}
             className="blob-btn group text-white rounded-full text-lg font-medium shadow-lg hover:shadow-xl relative overflow-hidden z-10"
             style={{
               display: 'inline-flex',
