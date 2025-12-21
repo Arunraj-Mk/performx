@@ -45,13 +45,10 @@ const Footer = () => {
             About
           </a>
           <a href="#" className="hover:text-[#82D83A] transition whitespace-nowrap">
-            Project
+            Why us
           </a>
           <a href="#" className="hover:text-[#82D83A] transition whitespace-nowrap">
-            why us
-          </a>
-          <a href="#" className="hover:text-[#82D83A] transition whitespace-nowrap">
-            services
+            Services
           </a>
           <a href="#" className="hover:text-[#82D83A] transition whitespace-nowrap">
             Contact
