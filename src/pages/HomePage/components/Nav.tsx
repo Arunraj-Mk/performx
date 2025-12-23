@@ -5,7 +5,7 @@ const Nav = () => {
   const blobRef = useRef<HTMLSpanElement>(null)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
-  const handleMouseEnter = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleMouseEnter = (e: React.MouseEvent<HTMLButtonElement>) => {
     const button = e.currentTarget
     const blob = blobRef.current
     if (!blob) return
@@ -15,7 +15,7 @@ const Nav = () => {
     blob.style.top = `${rect.height}px`
   }
 
-  const handleMouseLeave = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleMouseLeave = (e: React.MouseEvent<HTMLButtonElement>) => {
     const button = e.currentTarget
     const blob = blobRef.current
     if (!blob) return
@@ -92,11 +92,9 @@ const Nav = () => {
           </div>
 
           <div className="hidden md:block">
-            <a
-              href="https://calendly.com/ceo-perform100x/30min"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="blob-btn relative px-5 py-2.5 text-[13px] font-medium flex items-center gap-1.5 z-10 overflow-hidden"
+            <button
+              onClick={() => scrollToSection('why-us')}
+              className="blob-btn relative px-5 py-2.5 text-[13px] font-medium flex items-center gap-1.5 z-10 overflow-hidden bg-transparent border-none cursor-pointer"
               style={{
                 color: '#ffffff',
                 backgroundColor: '#256BF1',
@@ -121,7 +119,7 @@ const Nav = () => {
                 />
               </svg>
               <span ref={blobRef} className="blob-btn__blob"></span>
-            </a>
+            </button>
           </div>
 
           <button
@@ -152,25 +150,31 @@ const Nav = () => {
           paddingBottom: '20px'
         }}
       >
+        <button
+          className="absolute top-4 right-4 text-black hover:opacity-70 transition-opacity p-2 z-10"
+          onClick={closeMobileMenu}
+          aria-label="Close menu"
+        >
+          <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
         <div className="flex flex-col items-center gap-6 px-4">
           <button onClick={() => scrollToSection('services')}>Service</button>
           <button onClick={() => scrollToSection('about')}>About us</button>
           <button onClick={() => scrollToSection('how-it-works')}>How it works</button>
 
-          <a
-            href="https://calendly.com/ceo-perform100x/30min"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="blob-btn relative px-5 py-2.5 text-[13px] font-medium flex items-center gap-1.5 z-10 mt-2"
+          <button
+            onClick={() => scrollToSection('why-us')}
+            className="blob-btn relative px-5 py-2.5 text-[13px] font-medium flex items-center gap-1.5 z-10 mt-2 bg-transparent border-none cursor-pointer"
             style={{
               color: '#ffffff',
               backgroundColor: '#256BF1',
               borderRadius: '100px'
             }}
-            onClick={closeMobileMenu}
           >
             <span className="relative z-10">Work with us</span>
-          </a>
+          </button>
         </div>
       </div>
 

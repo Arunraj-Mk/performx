@@ -15,9 +15,28 @@ const WhyPerform100x = () => {
     setFormData(prev => ({ ...prev, [name]: value }))
   }
 
+  const isFormValid = () => {
+    return (
+      formData.fullName.trim() !== '' &&
+      formData.email.trim() !== '' &&
+      formData.phoneNumber.trim() !== '' &&
+      formData.comments.trim() !== '' &&
+      /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)
+    )
+  }
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
+    if (!isFormValid()) {
+      return
+    }
     console.log('Form submitted:', formData)
+    // Open Calendly after form validation
+    window.open(
+      'https://calendly.com/ceo-perform100x/30min',
+      '_blank',
+      'noopener,noreferrer'
+    )
   }
 
   const reasons = [
@@ -183,21 +202,15 @@ padding:"5px 14px"
               {/* Submit Button */}
               <button
                 type="submit"
-                onClick={() => {
-                  window.open(
-                    'https://calendly.com/ceo-perform100x/30min',
-                    '_blank',
-                    'noopener,noreferrer'
-                  )
-                }}
-                className="w-full text-white font-semibold transition-colors duration-300 hover:opacity-90 whitespace-nowrap"
+                disabled={!isFormValid()}
+                className="w-full text-white font-semibold transition-colors duration-300 hover:opacity-90 whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed"
                 style={{
                   display: 'flex',
                   padding: '19px 40px',
                   alignItems: 'center',
                   justifyContent: 'center',
                   borderRadius: '11px',
-                  background: '#2B60EC',
+                  background: isFormValid() ? '#2B60EC' : '#9CA3AF',
                 }}
               >
                 Get your Free strategy Session

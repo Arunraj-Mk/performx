@@ -26,7 +26,7 @@ import VideoImage from '@/assets/images/video.png'
 // Animated Image Carousel Component for Section 01
 // Animation triggers once when user scrolls to the component
 const AnimatedImageCarousel = () => {
-  const images = [Frame1, Frame2, Frame3]
+  const images = [Frame1,Frame3, Frame2, ]
   const [currentIndex, setCurrentIndex] = useState(0)
   const [hasAnimated, setHasAnimated] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)
